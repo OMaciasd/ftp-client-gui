@@ -1,0 +1,102 @@
+<filezilla-server-exported xmlns:fz="https://filezilla-project.org"
+    xmlns="https://filezilla-project.org"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fz:product_flavour="standard" fz:product_version="1.8.2">
+    <protocols_options>
+        <autobanner>
+            <ban_duration>300000</ban_duration>
+            <login_failure_time_window>0</login_failure_time_window>
+        </autobanner>
+        <performance>
+            <number_of_session_threads>0</number_of_session_threads>
+            <receive_buffer_size>-1</receive_buffer_size>
+            <send_buffer_size>-1</send_buffer_size>
+        </performance>
+        <timeouts>
+            <login_timeout>60000</login_timeout>
+            <activity_timeout>3600000</activity_timeout>
+        </timeouts>
+    </protocols_options>
+    <ftp_options>
+        <listener>
+            <address>0.0.0.0</address>
+            <port>21</port>
+            <tls_mode>0</tls_mode>
+        </listener>
+        <listener>
+            <address>::</address>
+            <port>21</port>
+            <tls_mode>0</tls_mode>
+        </listener>
+        <session>
+            <pasv>
+                <host_override/>
+                <do_not_override_host_if_peer_is_local>true</do_not_override_host_if_peer_is_local>
+            </pasv>
+            <tls min_protocol_version="2" index="4">
+                <original index="2">
+                    <fingerprint>7d:17:9b:39:6f:46:e9:64:b9:d4:53:98:a8:e9:77:f4:a7:a8:2e:6b:dc:db:0c:5a:af:a2:05:2f:bd:22:3b:cd</fingerprint>
+                </original>
+                <key>-----BEGIN EC PRIVATE KEY----- MHgCAQEEIQD+xo9HcZazQuIhzNnkTDz4jDxeLKHm7NZVdnEcKyiITKAKBggqhkjO PQMBB6FEA0IABImd8uzK+49uIGa5Uy/bgOky9QN/jZAkvjxDNX6YO+5tECbi9dRF vmYesTBx44p73Ad6MAAV4lJQuZlcISXRjI8=
+-----END EC PRIVATE KEY-----</key>
+                <certs>-----BEGIN CERTIFICATE----- MIIBhzCCAS6gAwIBAgIUXNeKnO6E45SK/TssAaYECrqNul4wCgYIKoZIzj0EAwIw MzExMC8GA1UEAxMoZmlsZXppbGxhLXNlcnZlciBzZWxmIHNpZ25lZCBjZXJ0aWZp Y2F0ZTAeFw0yNDA2MjYyMzQxNDZaFw0yNTA2MjcyMzQ2NDZaMDMxMTAvBgNVBAMT KGZpbGV6aWxsYS1zZXJ2ZXIgc2VsZiBzaWduZWQgY2VydGlmaWNhdGUwWTATBgcq hkjOPQIBBggqhkjOPQMBBwNCAASJnfLsyvuPbiBmuVMv24DpMvUDf42QJL48QzV+ mDvubRAm4vXURb5mHrEwceOKe9wHejAAFeJSULmZXCEl0YyPoyAwHjAOBgNVHQ8B Af8EBAMCBaAwDAYDVR0TAQH/BAIwADAKBggqhkjOPQQDAgNHADBEAiBgFLPf4GM9 Vi6GyDH1Mj1kSWHEKdlocE0oSz/XPhQt1gIgFV2Fib4aOCoZ6rS0NMyUsP1iWfwL mApYa8SLArywJuE=
+-----END CERTIFICATE-----</certs>
+            </tls>
+        </session>
+        <welcome_message has_version="true"/>
+    </ftp_options>
+    <disallowed_ips/>
+    <allowed_ips/>
+    <groups/>
+    <users>
+        <default_impersonator index="0" enabled="false">
+            <name/>
+            <password/>
+        </default_impersonator>
+        <user name="admin" enabled="true">
+            <mount_point tvfs_path="/" access="3" native_path="C:\python-ftp" new_native_path="" recursive="2" flags="1"/>
+            <rate_limits inbound="unlimited" outbound="unlimited" session_inbound="unlimited" session_outbound="unlimited"/>
+            <allowed_ips/>
+            <disallowed_ips/>
+            <session_open_limits files="unlimited" directories="unlimited"/>
+            <session_count_limit>unlimited</session_count_limit>
+            <description/>
+            <password index="1">
+                <hash>6JspmIqrdtPiQ2DJnY8Rj2QWFjw9Z7tkYD+yjMMi/Ak</hash>
+                <salt>QQcm/ZXbz2AhNoOUDOVvD/SXkCzlN4zmEOCtA6Istog</salt>
+                <iterations>100000</iterations>
+            </password>
+            <methods>1</methods>
+        </user>
+    </users>
+    <admin_options>
+        <local_port>14148</local_port>
+        <password index="1">
+            <hash>r5Z8HVkXt1Vvvna0CqWttvTkR34sYOAUL9DJshNqdCk</hash>
+            <salt>v/IAt4ubucyzIzD0HbCy57rEczaTW8BN0KEtbueb7F8</salt>
+            <iterations>100000</iterations>
+        </password>
+        <tls min_protocol_version="2" index="4">
+            <original index="2">
+                <fingerprint>ab:0a:4a:4e:90:0f:b4:ec:06:b9:19:98:d8:1c:d5:e1:7b:47:05:18:2b:9c:c9:c2:96:df:d9:be:34:ac:bb:c0</fingerprint>
+            </original>
+            <key>-----BEGIN EC PRIVATE KEY----- MHgCAQEEIQD/2zgLPqpchdni0OpxYm/8jWU9LTDhq08L63oaoR0wPKAKBggqhkjO PQMBB6FEA0IABHalzICSLmEjtUwE21bbAdIu6T78LQ3bcLWlyQAV4Ygqh5W7lMNm JCuTsplzIAtXFCzdUoAHVvRSvbftTX6vTd0=
+-----END EC PRIVATE KEY-----</key>
+            <certs>-----BEGIN CERTIFICATE-----
+MIIBiDCCAS6gAwIBAgIUgo0i1hWKJY2RbLvs9nUJ2K7tTqcwCgYIKoZIzj0EAwIw
+MzExMC8GA1UEAxMoZmlsZXppbGxhLXNlcnZlciBzZWxmIHNpZ25lZCBjZXJ0aWZp
+Y2F0ZTAeFw0yNDA2MjYyMzQxNDZaFw0yNTA2MjcyMzQ2NDZaMDMxMTAvBgNVBAMT
+KGZpbGV6aWxsYS1zZXJ2ZXIgc2VsZiBzaWduZWQgY2VydGlmaWNhdGUwWTATBgcq
+hkjOPQIBBggqhkjOPQMBBwNCAAR2pcyAki5hI7VMBNtW2wHSLuk+/C0N23C1pckA
+FeGIKoeVu5TDZiQrk7KZcyALVxQs3VKAB1b0Ur237U1+r03doyAwHjAOBgNVHQ8B
+Af8EBAMCBaAwDAYDVR0TAQH/BAIwADAKBggqhkjOPQQDAgNIADBFAiB3i2Y22iz7
+yZ/1XXbeE6DudMcCSNdtnOB+RtviMXO0igIhAOiR0MbPBpqozKAV32E6dXaI+Ujy
+p5mMXL9hQgWzUfPf
+-----END CERTIFICATE-----</certs>
+        </tls>
+    </admin_options>
+    <logger_options>
+        <name>C:\Program Files\FileZilla Server\Logs\filezilla-server.log</name>
+        <rotate_when>0</rotate_when>
+        <retain_only>10</retain_only>
+    </logger_options>
+</filezilla-server-exported>
