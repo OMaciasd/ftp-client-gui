@@ -14,10 +14,14 @@ This program provides a Graphical User Interface (GUI) to interact with an FTP s
 
    If you haven't downloaded the repository code, you can clone it using Git:
 
+   ```powershell (Admin)
+   $gitPath = (Get-Command git).Source.Replace("\git.exe", "")
+   [Environment]::SetEnvironmentVariable("Path", "$($env:Path);$gitPath\bin;$gitPath\cmd", [EnvironmentVariableTarget]::Machine)
+   ```
+   
    ```bash
    git clone --recursive --depth=1 https://github.com/OMaciasd/ftp-client-gui.git --progress
    cd ftp-client-gui
-   pip install tkinter
    python cliente_ftp_gui.py
    ```
 
